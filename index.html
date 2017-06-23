@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+
+<html ng-app="myApp">
+    <head>
+        <title>BlogIt!</title>
+        
+        <!-- CSS Files -->
+        <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css" type="text/css" />
+        <link rel="stylesheet" href="style.css" type="text/css" />
+        <link rel="stylesheet" href="bower_components/ngToast/dist/ngToast.min.css" type="text/css" />
+        <link rel='stylesheet' href='bower_components/textAngular/dist/textAngular.css'>
+        <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css" type="text/css" />
+
+        <!--JS Files-->
+        <script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
+        <script type="text/javascript" src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="bower_components/stamplay-js-sdk/dist/stamplay.min.js"></script>
+        <script type="text/javascript" src="bower_components/angular/angular.min.js"></script>
+        <script type="text/javascript" src="bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+        <script type="text/javascript" src="bower_components/angular-sanitize/angular-sanitize.min.js"></script>
+        <script type="text/javascript" src="bower_components/ngToast/dist/ngToast.min.js"></script>
+        <script src='bower_components/textAngular/dist/textAngular-rangy.min.js'></script>
+        <script src='bower_components/textAngular/dist/textAngular-sanitize.min.js'></script>
+        <script src='bower_components/textAngular/dist/textAngular.min.js'></script>
+        <script type="text/javascript" src="app.js"></script>
+    </head>
+
+    <body mg-controller="MainCtrl">
+        <toast></toast>
+        <div class="container-fluid">
+            <div ng-include="'structure/menu.html'"></div>
+        </div>
+        <div ui-view></div>
+    </body>
+</html>
